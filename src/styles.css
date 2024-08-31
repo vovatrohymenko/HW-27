@@ -1,0 +1,39 @@
+.box {
+  width: 300px;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-80%);
+  transition-duration: 250ms;
+}
+.box:hover .box-title {
+  opacity: 0;
+}
+.box:hover {
+  transform: translateX(0);
+  transition-duration: 300ms;
+}
+.box-title {
+  color: #ffff;
+  font-size: 40px;
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+.nav-link {
+  font-size: 30px;
+  color: #fff;
+}
+.nav-link:hover {
+  color: rgb(220, 83, 33);
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
